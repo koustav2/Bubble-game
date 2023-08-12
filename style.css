@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(155, 184, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(80, 74, 80);
+    font-weight: 700;
+}
+
+.main {
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ptop {
+    padding: 0 5%; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    background-color: rgb(87, 73, 129);
+}
+
+.board {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%; /* Adjust width for smaller screens */
+}
+
+.box {
+    padding: 10px 20px;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: rgb(5, 25, 113);
+    border-radius: 5px;
+}
+
+.pbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-weight: 700;
+    height: 60px;
+    background-color: rgb(72, 104, 72);
+    border-radius: 50%;
+    color: white;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(4, 62, 4);
+}
+
+::selection {
+    background-color: rgb(76, 6, 97);
+    color: white;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(72, 104, 72);
+}
+
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 700;
+    background-color: rgb(72, 104, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: rgb(4, 62, 4);
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .ptop {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+    .board {
+        width: 30%; /* Adjust width for smaller screens */
+    }
+    .box {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+    .bubble {
+        width: 50px; /* Adjust width for smaller screens */
+        height: 50px; /* Adjust height for smaller screens */
+    }
+    .result {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+    button {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+    .pbottom {
+        margin-bottom: 50%; /* Adjust padding for smaller screens */
+    }
+}
+
+/* You can add more media queries for other screen sizes if needed */
