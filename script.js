@@ -14,7 +14,7 @@ function increase() {
 }
 
 function myFunction() {
-    const numBubbles = 130; // Number of bubbles
+    const numBubbles = 126; // Number of bubbles
     for (let i = 0; i < numBubbles; i++) {
         const rand = Math.floor(Math.random() * 10);
         const bubble = document.createElement('div');
